@@ -150,7 +150,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    if defined(OLED_DISABLE_TIMEOUT)
 #        define OLED_TIMEOUT 0
 #    else
-#        define OLED_TIMEOUT 60000
+#        define OLED_TIMEOUT 100000
 #    endif
 #endif
 

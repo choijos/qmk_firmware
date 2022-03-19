@@ -22,11 +22,11 @@ bool led_update_kb(led_t led_state) {
     bool res = led_update_user(led_state);
     if (res) {
         // set_bitc_LED(led_state.caps_lock ? LED_DIM : LED_OFF);
-        if (led_state.caps_lock) {
-            set_big_LED_rgb(LED_ON, LED_ON, LED_ON);
+        if (!led_state.caps_lock) {
+            set_big_LED_rgb(LED_OFF, LED_OFF, LED_OFF);
 
         } else {
-            set_big_LED_rgb(LED_OFF, LED_OFF, LED_OFF);
+            set_big_LED_rgb(LED_ON, LED_ON, LED_ON);
 
         }
 
